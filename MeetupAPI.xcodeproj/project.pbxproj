@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70544231AC0ED9C0004824C /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C70544221AC0ED9C0004824C /* CommentViewController.m */; };
 		C7554C4B1AC0966F008F8761 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7554C4A1AC0966F008F8761 /* main.m */; };
 		C7554C4E1AC0966F008F8761 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7554C4D1AC0966F008F8761 /* AppDelegate.m */; };
 		C7554C511AC0966F008F8761 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7554C501AC0966F008F8761 /* ViewController.m */; };
@@ -14,6 +15,12 @@
 		C7554C561AC0966F008F8761 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7554C551AC0966F008F8761 /* Images.xcassets */; };
 		C7554C591AC0966F008F8761 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7554C571AC0966F008F8761 /* LaunchScreen.xib */; };
 		C7554C651AC0966F008F8761 /* MeetupAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7554C641AC0966F008F8761 /* MeetupAPITests.m */; };
+		C7554C701AC0A373008F8761 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = C7554C6F1AC0A373008F8761 /* Event.m */; };
+		C7554C731AC0A3E3008F8761 /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7554C721AC0A3E3008F8761 /* EventDetailViewController.m */; };
+		C7554C761AC0C8F0008F8761 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7554C751AC0C8F0008F8761 /* WebViewController.m */; };
+		C78C9EF71AC9DFFF00AF477F /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = C78C9EF61AC9DFFF00AF477F /* Comment.m */; };
+		C78C9EFA1AC9E01D00AF477F /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = C78C9EF91AC9E01D00AF477F /* Member.m */; };
+		C78C9EFE1AC9F41100AF477F /* MemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C78C9EFD1AC9F41100AF477F /* MemberViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C70544211AC0ED9C0004824C /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommentViewController.h; path = ../CommentViewController.h; sourceTree = "<group>"; };
+		C70544221AC0ED9C0004824C /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommentViewController.m; path = ../CommentViewController.m; sourceTree = "<group>"; };
 		C7554C451AC0966F008F8761 /* MeetupAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetupAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7554C491AC0966F008F8761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7554C4A1AC0966F008F8761 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +49,18 @@
 		C7554C5E1AC0966F008F8761 /* MeetupAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeetupAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7554C631AC0966F008F8761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7554C641AC0966F008F8761 /* MeetupAPITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeetupAPITests.m; sourceTree = "<group>"; };
+		C7554C6E1AC0A373008F8761 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = ../Event.h; sourceTree = "<group>"; };
+		C7554C6F1AC0A373008F8761 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = ../Event.m; sourceTree = "<group>"; };
+		C7554C711AC0A3E3008F8761 /* EventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EventDetailViewController.h; path = ../EventDetailViewController.h; sourceTree = "<group>"; };
+		C7554C721AC0A3E3008F8761 /* EventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EventDetailViewController.m; path = ../EventDetailViewController.m; sourceTree = "<group>"; };
+		C7554C741AC0C8F0008F8761 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = ../WebViewController.h; sourceTree = "<group>"; };
+		C7554C751AC0C8F0008F8761 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = ../WebViewController.m; sourceTree = "<group>"; };
+		C78C9EF51AC9DFFF00AF477F /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comment.h; path = ../Comment.h; sourceTree = "<group>"; };
+		C78C9EF61AC9DFFF00AF477F /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comment.m; path = ../Comment.m; sourceTree = "<group>"; };
+		C78C9EF81AC9E01D00AF477F /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Member.h; path = ../Member.h; sourceTree = "<group>"; };
+		C78C9EF91AC9E01D00AF477F /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Member.m; path = ../Member.m; sourceTree = "<group>"; };
+		C78C9EFC1AC9F41100AF477F /* MemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemberViewController.h; path = ../MemberViewController.h; sourceTree = "<group>"; };
+		C78C9EFD1AC9F41100AF477F /* MemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MemberViewController.m; path = ../MemberViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +102,19 @@
 		C7554C471AC0966F008F8761 /* MeetupAPI */ = {
 			isa = PBXGroup;
 			children = (
-				C7554C4C1AC0966F008F8761 /* AppDelegate.h */,
-				C7554C4D1AC0966F008F8761 /* AppDelegate.m */,
+				C78C9EFC1AC9F41100AF477F /* MemberViewController.h */,
+				C78C9EFD1AC9F41100AF477F /* MemberViewController.m */,
+				C70544211AC0ED9C0004824C /* CommentViewController.h */,
+				C70544221AC0ED9C0004824C /* CommentViewController.m */,
+				C7554C741AC0C8F0008F8761 /* WebViewController.h */,
+				C7554C751AC0C8F0008F8761 /* WebViewController.m */,
+				C7554C711AC0A3E3008F8761 /* EventDetailViewController.h */,
+				C7554C721AC0A3E3008F8761 /* EventDetailViewController.m */,
 				C7554C4F1AC0966F008F8761 /* ViewController.h */,
 				C7554C501AC0966F008F8761 /* ViewController.m */,
+				C7554C4C1AC0966F008F8761 /* AppDelegate.h */,
+				C7554C4D1AC0966F008F8761 /* AppDelegate.m */,
+				C78C9EFB1AC9E04400AF477F /* Model */,
 				C7554C521AC0966F008F8761 /* Main.storyboard */,
 				C7554C551AC0966F008F8761 /* Images.xcassets */,
 				C7554C571AC0966F008F8761 /* LaunchScreen.xib */,
@@ -117,6 +147,19 @@
 				C7554C631AC0966F008F8761 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C78C9EFB1AC9E04400AF477F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7554C6E1AC0A373008F8761 /* Event.h */,
+				C7554C6F1AC0A373008F8761 /* Event.m */,
+				C78C9EF51AC9DFFF00AF477F /* Comment.h */,
+				C78C9EF61AC9DFFF00AF477F /* Comment.m */,
+				C78C9EF81AC9E01D00AF477F /* Member.h */,
+				C78C9EF91AC9E01D00AF477F /* Member.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +262,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7554C701AC0A373008F8761 /* Event.m in Sources */,
+				C7554C761AC0C8F0008F8761 /* WebViewController.m in Sources */,
+				C70544231AC0ED9C0004824C /* CommentViewController.m in Sources */,
+				C7554C731AC0A3E3008F8761 /* EventDetailViewController.m in Sources */,
+				C78C9EFE1AC9F41100AF477F /* MemberViewController.m in Sources */,
 				C7554C511AC0966F008F8761 /* ViewController.m in Sources */,
 				C7554C4E1AC0966F008F8761 /* AppDelegate.m in Sources */,
 				C7554C4B1AC0966F008F8761 /* main.m in Sources */,
+				C78C9EFA1AC9E01D00AF477F /* Member.m in Sources */,
+				C78C9EF71AC9DFFF00AF477F /* Comment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +462,7 @@
 				C7554C6A1AC0966F008F8761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7554C6B1AC0966F008F8761 /* Build configuration list for PBXNativeTarget "MeetupAPITests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +471,7 @@
 				C7554C6D1AC0966F008F8761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
