@@ -29,6 +29,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    UIImageView *navigationImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 28, 28)];
+    navigationImage.image = [UIImage imageNamed:@"logo-2x"];
+    UIImageView *titleImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 28, 28)];
+    [titleImageView addSubview:navigationImage];
+    self.navigationItem.titleView = titleImageView;
+    navigationImage.contentMode = UIViewContentModeScaleAspectFill;
+
+
     [Event retrieveMeetupDataWithCompletion:^(NSArray *meetupArray) {
         self.tableDataArray = meetupArray;
     }];
@@ -45,7 +53,7 @@
     if(self.isFiltered) {
         return self.searchResults.count;
     } else {
-    return self.tableDataArray.count;
+        return self.tableDataArray.count;
     }
 }
 
@@ -65,21 +73,6 @@
     self.eventDVC.event = selectedEvent;
     NSLog(@"%@", selectedEvent.eventName);
 }
-
-//- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-//    NSLog(@"Search Clicked");
-//    self.apiString = [NSString stringWithFormat: @"https://api.meetup.com/2/open_events.json?zip=60604&text=%@&time=,1w&key=4d502876175d4d4c70222f84b5e392c", self.searchBar.text];
-//    NSURL *url = [NSURL URLWithString:self.apiString];
-//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-//
-//    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-//        self.meetupDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&connectionError];
-//        self.tableDataArray = [self.meetupDictionary objectForKey:@"results"];
-//        [self.tableView reloadData];
-//    }];
-//    [self.searchBar resignFirstResponder];
-//
-//}
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     [self.searchBar resignFirstResponder];

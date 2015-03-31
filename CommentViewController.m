@@ -55,7 +55,7 @@
     MemberViewController *memberVC = segue.destinationViewController;
 
     Comment *comment = self.commentTableDataArray[[self.commentTableView indexPathForSelectedRow].row];
-    comment.memberID = memberVC.memberID;
+    memberVC.memberID = comment.memberID;
 }
 
 

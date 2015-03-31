@@ -12,7 +12,6 @@
 @interface MemberViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *ImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
-@property Member *member;
 
 @end
 
@@ -21,10 +20,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    NSLog(@"%@", self.memberID);
+    self.ImageView.layer.masksToBounds = YES;
+//    self.ImageView.layer.cornerRadius = self.ImageView.bounds.size.width / 2.0;
+    self.ImageView.layer.cornerRadius = 100;
+
+
+
 
     [Member retrieveImageDataWithCompletion:self.memberID withCompletionHandler:^(Member *member) {
         self.member = member;
+        NSLog(@"data received");
+        self.nameLabel.text = self.member.name;
+        NSData *imageData = [NSData dataWithContentsOfURL:self.member.photoURL];
+        self.ImageView.image = [UIImage imageWithData:imageData];
     }];
+
 
 
 }
@@ -34,14 +45,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

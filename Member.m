@@ -16,7 +16,7 @@
     NSDictionary *photo = [dictionary objectForKey:@"photo"];
     self.commentMemberID = [dictionary objectForKey:@"id"];
     self.name = [dictionary objectForKey:@"name"];
-    self.photoURL = [photo objectForKey:@"photo_link"];
+    self.photoURL = [NSURL URLWithString:[photo objectForKey:@"photo_link"]];
     return  self;
 }
 
